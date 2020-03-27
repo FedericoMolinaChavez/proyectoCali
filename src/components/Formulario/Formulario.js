@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
+import styled from 'styled-components'
 
-const Formulario = () => {
+
+const Formulario = ({className}) => {
+    const [enfermedad, setEnfermedad] = useState([]);
     return (
-        <div>
-            <form>
+            <form className={className}>
                 <label>
                     Nombres y apellidos:
                     <input type="text" placeholder="Nombres y apellidos" />
@@ -33,8 +35,13 @@ const Formulario = () => {
                 </label>
                 <label>
                     Registra si tienes alguna enfermedad
-                    <select multiple={true} value={[]}>
-                            <option value="Asma">Asma</option>
+                    <select multiple={true} value={enfermedad}>
+                            <option value="Asma" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value]);
+                            console.log(enfermedad)}}>Asma</option>
                             <option value="EPOC">EPOC</option>
                             <option value="Enfisema Pulmonar">Enfisema Pulmonar</option>
                             <option value="Tuberculosis">Tuberculosis</option>
@@ -56,8 +63,19 @@ const Formulario = () => {
                 </label>
                 <input type="submit" placeholder="algo" />
             </form>
-        </div>
+        
     )
 }
 
-export default Formulario
+export default styled(Formulario)`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+
+}
+`
