@@ -32,14 +32,11 @@ module.exports = {
       options: {
         // Add any options here
       },
+      
     },
-  {
-        resolve: `gatsby-theme-amplify-cognito`,
-        options: {
-            region: 'us-east-1',
-            userPoolId: 'us-east-1_F8XqM0jaR',
-            userPoolWebClientId: '4h4m51ag3soug8jbfb95jlf5fq'
-        },}
+    `gatsby-plugin-transition-link`
+
+
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

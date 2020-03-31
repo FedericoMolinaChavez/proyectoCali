@@ -40,25 +40,92 @@ const Formulario = ({className}) => {
                                 if(ind !== e.target.value){
                                     return ind;
                                 }
-                            }),e.target.value]);
-                            console.log(enfermedad)}}>Asma</option>
-                            <option value="EPOC">EPOC</option>
-                            <option value="Enfisema Pulmonar">Enfisema Pulmonar</option>
-                            <option value="Tuberculosis">Tuberculosis</option>
-                            <option value="Diabetes Mellitus">Diabetes Mellitus</option>
-                            <option value="VIH">VIH</option>
-                            <option value="Enfermedad del Corazón">Enfermedad del Corazón</option>
-                            <option value="Cáncer">Cáncer</option>
-                            <option value="Desnutrición">Desnutrición</option>
-                            <option value="Obesidad">Obesidad</option>
-                            <option value="Enfermedad Renal Crónica">Enfermedad Renal Crónica</option>
-                            <option value="Hipertensión arterial">Hipertensión arterial</option>
-                            <option value="Enfermedad crónica del hígado">Enfermedad crónica del hígado</option>
-                            <option value="Enfermedad Neurológica o del neurodesarrollo">Enfermedad Neurológica o del neurodesarrollo</option>
-                            <option value="Fumador actual">Fumador actual</option>
-                            <option value="Ex fumador">Ex fumador</option>
-                            <option value="Ninguna">Ninguna</option>
-                            <option value="Otra...">Otra...</option>
+                            }),e.target.value])}}>Asma</option>
+                            <option value="EPOC" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>EPOC</option>
+                            <option value="Enfisema Pulmonar" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Enfisema Pulmonar</option>
+                            <option value="Tuberculosis" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Tuberculosis</option>
+                            <option value="Diabetes Mellitus" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Diabetes Mellitus</option>
+                            <option value="VIH" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>VIH</option>
+                            <option value="Enfermedad del Corazón" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Enfermedad del Corazón</option>
+                            <option value="Cáncer" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Cáncer</option>
+                            <option value="Desnutrición" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Desnutrición</option>
+                            <option value="Obesidad" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Obesidad</option>
+                            <option value="Enfermedad Renal Crónica" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Enfermedad Renal Crónica</option>
+                            <option value="Hipertensión arterial" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Hipertensión arterial</option>
+                            <option value="Enfermedad crónica del hígado" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Enfermedad crónica del hígado</option>
+                            <option value="Enfermedad Neurológica o del neurodesarrollo" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Enfermedad Neurológica o del neurodesarrollo</option>
+                            <option value="Fumador actual" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Fumador actual</option>
+                            <option value="Ex fumador" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Ex fumador</option>
+                            <option value="Ninguna" onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Ninguna</option>
+                            <option value="Otra..." onClick = {(e) => {setEnfermedad([...enfermedad.filter((ind) =>{
+                                if(ind !== e.target.value){
+                                    return ind;
+                                }
+                            }),e.target.value])}}>Otra...</option>
                     </select>
                 </label>
                 <input type="submit" placeholder="algo" />
