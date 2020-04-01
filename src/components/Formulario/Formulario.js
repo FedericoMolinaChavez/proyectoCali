@@ -7,19 +7,8 @@ const Formulario = ({className}) => {
     return (
             <form className={className}>
                 <label>
-                    Nombres y apellidos:
-                    <input type="text" placeholder="Nombres y apellidos" />
-                </label>
-                <label>
                     Edad:
                     <input type="text" placeholder="Edad" />
-                </label>
-                <label>
-                    Sexo:
-                        <select>
-                            <option value="M">M</option>
-                            <option value="F">F</option>
-                        </select>
                 </label>
                 <label>
                     Numero de celular: 

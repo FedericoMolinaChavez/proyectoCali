@@ -16,6 +16,7 @@ const Login = ({className}) => {
             <input value="Contraseña"/>
             <Anilink fade to='/formulario'>Entrar</Anilink>
             <button className="facebookBut"><FaFacebook/></button>
+            <Anilink fade to='/Register'>Entrar</Anilink>
             </div>
             
         </section>
@@ -23,12 +24,14 @@ const Login = ({className}) => {
 }
 
 export default Styled(Login) `
+
 display: flex;
 height: 400px;
 width: 100%;
 flex-direction: row;
 justify-content: center;
 div{
+    background-color:#202060; 
     padding: 15px;
     border: solid;
     border-color grey;
@@ -48,10 +51,20 @@ input{
     border: 2;
     width: 90%;
     align-self: center;
+    background-color:#602080;
+    color: white;
 }
 button{
     width: 35%;
     align-self: center;
+    background-color:#b030b0;
+}
+a{
+    width: 35%;
+    align-self: center;
+    text-decoration: none;
+    text-align: center;
+    background-color:#b030b0;
 }
 facebookBut{
         backgroud-color: white;
